@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tarjetas{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  width: 300px;
+}
+
+.tokemForm
+{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tokemForm img{
+width: 30vw;
+margin-bottom: 10vh;
+}
+
+.tokemContent{
+  background-color: rgb(255, 27, 27);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40vw;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
+  color: white;
+}
+
+.tokemContent input{
+  margin-left: 15px;
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 20vw;
+  text-align: center;
+}
+
+.tokemContent button{
+  border-radius: 10px;
+  border: none;
+  height: 25px;
+  width: 80px;
+  text-align: center;
+}
+
+.tokemContent button:hover{
+  font-weight: bold;
+  color: rgb(255, 27, 27);
+  transform: scale(1.1);
+}
+
+.parking{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 100px;
+  flex-direction: row;
+}
+
+.card0{
+  display: flex;
+  border-color:  rgb(255, 27, 27);
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 5px;
+  color: rgb(255, 27, 27);
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+}
+.card1{
+  display: flex;
+  border-color:  rgb(53, 196, 22);
+  border-radius: 40px;
+  border-style: solid;
+  border-width: 5px;
+  color: rgb(53, 196, 22);
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 15px;
+}
+
+.header{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  background-color: rgb(255, 27, 27);
+  color: white;
+  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
+  width: 100vw;
+  align-items: center;
+  justify-content: space-around;
+}
