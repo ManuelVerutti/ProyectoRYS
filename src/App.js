@@ -107,18 +107,24 @@ function App() {
 
           {!token ?
             <>
-              <h1>Seleccione el dispositivo</h1>
-              <div>
-                <button onClick={() => { setToken("BBFF-rgVXhx600zQ2ipyBtIx7pmHQWlD5pT") }}>Dispositivo 1</button>
-                <button onClick={() => { setToken("BBFF-vnBDBCkElNwXFRr1jgVEFtqZ8ckzQ0") }}>Dispositivo 2</button>
-                <button onClick={() => { setToken("BBFF-BC6L9f0acjyd9CY8BZjITgocDgWIwM") }}>Dispositivo 3</button>
+              <div className='deviceSelector'>
+                <div className='cardDevice'>
+                  <h1>Seleccione el dispositivo</h1>
+                  <div>
+                    <button onClick={() => { setToken("BBFF-rgVXhx600zQ2ipyBtIx7pmHQWlD5pT") }}>Dispositivo 1</button>
+                    <button onClick={() => { setToken("BBFF-vnBDBCkElNwXFRr1jgVEFtqZ8ckzQ0") }}>Dispositivo 2</button>
+                    <button onClick={() => { setToken("BBFF-BC6L9f0acjyd9CY8BZjITgocDgWIwM") }}>Dispositivo 3</button>
+                  </div>
+                </div>
+
               </div>
+
 
             </>
             :
             <>
               <div className='main'>
-                <button onClick={()=>{setToken(null)}}>Salir</button>
+                <button onClick={() => { setToken(null) }}>Salir</button>
                 <div className='menuVar'>
                   {datos.results.map((variable, index) => (
                     <button key={index} onClick={() => { setCurrentVariable(variable.name); handleVariableSumbit(variable.name); }}>
@@ -134,12 +140,12 @@ function App() {
                   </> :
                   <>
                     <div className='contentInfo'>
-                      {datosVariable&&
-                       <p>
-                       Ultimo dato {datosVariable.results[0].value}
-                   </p>
+                      {datosVariable &&
+                        <p>
+                          Ultimo dato {datosVariable.results[0].value}
+                        </p>
                       }
-                     
+
 
                       <div className='tableInfo'>
                         <h2>Tabla de {currentVariable}</h2>
