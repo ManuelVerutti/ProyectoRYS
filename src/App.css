@@ -1,47 +1,6 @@
-.App {
+
+.App{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.tarjetas{
-  display: flex;
-  justify-content: space-around;
-  margin: 20px;
-  width: 300px;
 }
 
 .tokemForm
@@ -64,7 +23,7 @@ margin-bottom: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 40vw;
+  width: 70vw;
   padding: 10px;
   border-radius: 20px;
   box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
@@ -80,7 +39,7 @@ margin-bottom: 10vh;
   text-align: center;
 }
 
-.tokemContent button{
+button{
   border-radius: 10px;
   border: none;
   height: 25px;
@@ -94,46 +53,6 @@ margin-bottom: 10vh;
   transform: scale(1.1);
 }
 
-.parking{
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding-top: 100px;
-  flex-direction: row;
-}
-
-.card0{
-  display: flex;
-  border-color:  rgb(255, 27, 27);
-  border-radius: 40px;
-  border-style: solid;
-  border-width: 5px;
-  color: rgb(255, 27, 27);
-  font-size: xx-large;
-  font-weight: bolder;
-  width: 200px;
-  height: 200px;
-  align-items: center;
-  justify-content: space-around;
-  margin: 15px;
-}
-.card1{
-  display: flex;
-  border-color:  rgb(53, 196, 22);
-  border-radius: 40px;
-  border-style: solid;
-  border-width: 5px;
-  color: rgb(53, 196, 22);
-  font-size: xx-large;
-  font-weight: bolder;
-  width: 200px;
-  height: 200px;
-  align-items: center;
-  justify-content: space-around;
-  margin: 15px;
-}
 
 .header{
   position: fixed;
@@ -146,4 +65,212 @@ margin-bottom: 10vh;
   width: 100vw;
   align-items: center;
   justify-content: space-around;
+}
+
+.header h3:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+  
+  align-items: center;
+}
+
+.menuVar{
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.main button{
+  background-color: rgb(255, 27, 27);
+  color: white;
+  height: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  width: 10vw;
+}
+
+.deviceSelector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cardDevice{
+  display: flex;
+  background-color: rgb(255, 27, 27);
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vh;
+  height: 50vh;
+  padding: 20px;
+  border-radius: 60px;
+  color: white;
+  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
+
+}
+
+.cardDevice div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cardDevice div button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 27, 27);
+  height: 25px;
+  font-weight: bold;
+  border-radius: 5px;
+  border-style: none;
+  width: 10vw;
+  min-width: 120px;
+  margin: 20px;
+}
+
+button:hover{
+  transform: scale(1.1);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.parqueadero{
+  display: flex;
+  background-color: rgb(145, 160, 163);
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.backGround{
+  position: fixed;
+  left: 40vw;
+  display: flex;
+  height: 100vh;
+  width: 50vw;
+}
+
+.park1{
+position: fixed;
+opacity: 70%;
+height: 32.5vh;
+width: 7vw;
+top: 11.5vh;
+left: 44.2vw;
+}
+.park2{
+  position: fixed;
+opacity: 70%;
+height: 32.5vh;
+width: 7vw;
+top: 11.5vh;
+left: 52.3vw;
+font-size: xx-large;
+}
+
+.park3{
+  position: fixed;
+  opacity: 70%;
+  height: 32.5vh;
+  width: 7vw;
+  top: 56vh;
+  left: 44.2vw;
+  font-size: xx-large;
+  }
+  .park4{
+    position: fixed;
+  opacity: 70%;
+  height: 32.5vh;
+  width: 7vw;
+  top: 56vh;
+  left: 77.3vw;
+  font-size: xx-large;
+  }
+
+.no_disponible{
+  background-color: #db3910 !important;
+}
+
+.disponible{
+  background-color: #7ecf27;
+}
+
+.no_bien_park{
+  background-color: #ff8d1b !important;
+}
+
+.mov_red{
+  
+  background-color: #1a71ae;
+}
+
+.panel{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  justify-content: space-between;
+  padding-top: 40px;
+  background-color: rgb(255, 255, 255);
+  font-size: small;
+  width: 25vw;
+}
+
+.panel button{
+  color: white;
+  background-color:rgb(255, 27, 27);  
+  width: 7vw;
+  font-weight: bolder;
+  height: 30px;
+  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
+
+}
+
+.panelInfo{
+  margin-bottom: 15vh;
+  background-color: rgb(255, 27, 27);
+  width: 22vw;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px -4px rgba(0, 0, 0, 0.616);
+  padding: auto;
+  text-align: left;
+  color: white;
+}
+
+.panelInfo p{
+  margin: 15px;
+  width: 15vw;
+}
+
+.panelInfo div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.indicador{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-style: solid;
+  border-color: white;
+  border-radius: 50%;
+  border-width: 4px;
 }
